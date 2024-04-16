@@ -18,6 +18,11 @@ int main(void)
 	while(1)
 	{
 		printf("123456\r\n");
+		
+		while(1)
+		{
+			printf("67890\r\n");
+		}
 	}
 	esp8266_start_mqtt_trans();
 	freertos_demo();
