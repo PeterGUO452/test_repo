@@ -46,6 +46,7 @@ int main(void)
 	while(1)
 	{
 		printf("12345\r\n");
+		printf("67890\r\n");
 			
 	}
 	
