@@ -1,4 +1,5 @@
 #include "RTOS.h"
+uint8_t add(uint8_t a,uint8_t b);
 
 int main(void)
 { 
@@ -15,13 +16,23 @@ int main(void)
 	Cache_queue* q1=NULL;
 	Cache_QueueReset(&q1,sizeof(int));
 
+	uint8_t a,b;
 	while(1)
 	{
 		printf("123456\r\n");
+		
+		a=b=0;
+		printf("%d\r\n",add(a,b));
+		
 	}
 	esp8266_start_mqtt_trans();
 	freertos_demo();
 	//≤‚ ‘≤‚ ‘≤‚ ‘
+}
+
+uint8_t add(uint8_t a,uint8_t b)
+{
+	return a+b;
 }
 
 
