@@ -21,9 +21,16 @@ int main(void)
 	{
 		printf("123456\r\n");
 		
+
 		a=b=0;
 		printf("%d\r\n",add(a,b));
 		
+
+		while(1)
+		{
+			printf("67890\r\n");
+		}
+
 	}
 	esp8266_start_mqtt_trans();
 	freertos_demo();
